@@ -39,7 +39,7 @@
     </nav>
 
     <section>
-      <h2>Viktig beskjed: Les dette! Klikk her! Klikk her! Klikk her! Veldig viktig! ✨</h2>
+      <h2>Viktig beskjed: Les dette! Klikk her! Klikk her! Klikk her! Veldig viktig!</h2>
     </section>
 
 
@@ -78,17 +78,17 @@
             <form>
               <label>
                 Navn:
-                <input type="text" id="navn" placeholder="Kari Nordmann">
+                <input type="text" id="navn" placeholder="Kari Nordmann..." required>
               </label>
 
               <label>
                 E-post:
-            <input type="email" id="email" placeholder="eksempel@hiof.no"> <!-- bevisst: duplisert id -->
+            <input type="email" id="email" placeholder="eksempel@hiof.no" required> <!-- bevisst: duplisert id -->
             </label>
 
             <label>
               Telefon:
-            <input type="tel" placeholder="40000900">
+            <input type="tel" placeholder="40000900" required>
             </label>
 
             <label for ="service">Tjeneste</label>
@@ -97,10 +97,14 @@
               <option>Bestilling</option>
               <option>Support</option>
 
+            <label>
+              Melding:
             <textarea rows="3" placeholder="Melding..."></textarea>
+            </label>
+
             <p class="help">Felt merket med <span class="required">rød farge</span> er obligatoriske.</p>
             <p class="error">skjemaet er feil utfylt</p> <!-- bevisst: lav kontrast på feilmelding, små bokstaver -->
-            <span class="fake-submit" role="button" tabindex="5">Send</span> <!-- bevisst: span som knapp, positiv tabindex -->
+            <input type="submit" value="Send"></input> <!-- bevisst: span som knapp, positiv tabindex -->
             </form>
           </div>
 
